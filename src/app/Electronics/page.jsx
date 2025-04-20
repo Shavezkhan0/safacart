@@ -14,7 +14,7 @@ export default function Electronics() {
     const router = useRouter();
     const [progress, setProgress] = useState(0);
 
-    const categories = ["laptop", "mobile", "tablets"];
+    const categories = ["Laptop", "Mobile", "Tablets"];
     const categoryQuery = categories.map(c => `category=${encodeURIComponent(c)}`).join("&");
 
     const fetchProducts = async () => {
