@@ -6,6 +6,8 @@ import { authOptions } from "@/lib/auth";
 import AuthProvider from "@/features/AuthProvider";
 import Footer from "@/components/Footer";
 import { ReduxProvider } from "@/redux/ReduxProvider";
+import CarbonPopup from "@/components/CarbonPopup";
+import CarbonTracker from "@/components/CarbonTracker";
 
 
 const geistSans = Geist({
@@ -32,6 +34,7 @@ export default async function RootLayout({ children }) {
         <AuthProvider session={session}>
           <ReduxProvider>
             <Navbar />
+            <CarbonTracker/>
             {children}
             <Footer />
           </ReduxProvider>
