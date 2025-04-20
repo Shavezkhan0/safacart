@@ -18,7 +18,7 @@ export default function Tables() {
         if (!hasMore) return;
         setLoadingMore(true);
         try {
-            const response = await fetch(`/api/products/getProducts_Category?category=Table&skip=${products.length}&limit=10`);
+            const response = await fetch(`/api/products/getProducts_Category?category=Tablet&skip=${products.length}&limit=10`);
             const data = await response.json();
             if (!data.products || data.products.length === 0) {
                 setHasMore(false);
@@ -59,7 +59,7 @@ export default function Tables() {
             />
             <main>
                 <section className="text-center py-20">
-                    <h1 className="text-4xl pt-5 text-green-900 font-bold mb-4">Eco-Friendly Tables</h1>
+                    <h1 className="text-4xl pt-5 text-green-900 font-bold mb-4">Eco-Friendly Tablets</h1>
 
                     {loading ? (
                         <div className="flex justify-center items-center flex-wrap gap-6">
@@ -128,7 +128,7 @@ export default function Tables() {
                     )}
                     {!hasMore && (
                         <p className="text-center mt-6 w-full col-span-full py-4 text-xl font-semibold text-gray-800 bg-green-100 rounded-xl shadow-lg mx-auto max-w-xs">
-                            No More Tables available
+                            No More Tablets available
                         </p>
                     )}
                 </section>
