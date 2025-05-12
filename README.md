@@ -97,7 +97,7 @@ Zahir Iqbal   Frontend Developer    zahiriqbal198@gmail.com
 
 Sarfe Alam    Backend Developer     sarfeandsarfe@gmaail.com
 
-Zuhair Ahmed    Frontend Developer     zuhairahmed@gmaail.com
+Zuhair Ahmed    Frontend Developer     zuhairahmad8186@gmail.com
 
 
 
